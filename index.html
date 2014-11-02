@@ -12,7 +12,7 @@ layout: default
       </div>
       <div class="panel-body">
         {{ post.content | truncatewords: 80 }}<br><br>
-        <a href="{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
+        <a href="{{ site.baseurl }}/{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
       </div>
    </div>
  </article>
@@ -27,7 +27,7 @@ layout: default
         </div>
         <div class="panel-body">
           {{ post.content | truncatewords: 30 }}<br><br>
-          <a href="{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
+          <a href="{{ site.baseurl }}/{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
         </div>
      </div>
     </article>
