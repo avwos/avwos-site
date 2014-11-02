@@ -1,0 +1,14 @@
+
+  <aside class="col-md-3 col-md-pull-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Latest crazy</h3>
+      </div>
+      {% for post in site.posts %}
+      <div class="panel-body">
+        <h5 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+        {{ post.content | truncatewords: 20 }}
+      </div>
+      {% endfor %}
+    </div>
+  </aside>

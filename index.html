@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="container col-md-8 col-md-push-3">
+{% for post in site.posts limit:1 %}
+
+  <article class="col-md-12 top-article">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h3 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      </div>
+      <div class="panel-body">
+        {{ post.content | truncatewords: 80 }}<br><br>
+        <a href="{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
+      </div>
+   </div>
+ </article>
+ {% endfor %}
+
+  {% for post in site.posts offset:1 limit:2 %}
+    <article class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        </div>
+        <div class="panel-body">
+          {{ post.content | truncatewords: 30 }}<br><br>
+          <a href="{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
+        </div>
+     </div>
+    </article>
+  {% endfor %}
+
+</div>
