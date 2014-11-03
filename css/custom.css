@@ -13,6 +13,10 @@ body {
   background-color: #fff;
 }
 
+.aside_panel {
+  border-bottom: 1px solid gray;
+}
+
 blockquote {
   font-size: .9em;
 }
