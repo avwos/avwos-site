@@ -18,7 +18,7 @@ a div.intro-text {
   text-decoration: none;
 }
 
-.intro-text:hover {
+header a:hover {
   color: #fff;
   text-decoration: none;
 }
