@@ -15,12 +15,12 @@ body {
 
 a div.intro-text {
   color: #fff;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-a div.intro-text:hover {
+.intro-text:hover {
   color: #fff;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .aside-panel {
