@@ -12,7 +12,7 @@ layout: default
 
 
   <article class="post-content">
-    Tagged with {{ page.categories | join: ', ' }}
+    <h4>Categories: {{ page.categories | join: ', ' }}</h4></br>
     {{ content }}
   </article></br>
   {% if page.comments %}
