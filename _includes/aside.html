@@ -4,7 +4,7 @@
       <div class="panel-heading">
         <h3 class="panel-title">Latest crazy</h3>
       </div>
-      {% for post in site.posts %}
+      {% for post in site.posts offset:1 limit:5 %}
       <div class="panel-body">
         <h5 class="title"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h5>
         {{ post.content | truncatewords: 20 }}
