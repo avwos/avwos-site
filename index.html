@@ -8,11 +8,11 @@ layout: default
     <div class="panel panel-default">
       <div class="panel-heading">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3 class="panel-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        <h3 class="panel-title"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h3>
       </div>
       <div class="panel-body">
         {{ post.content | truncatewords: 80 }}<br><br>
-        <a href="{{ site.baseurl }}{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
+        <a href="{{ site.baseurl }}/{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
       </div>
    </div>
  </article>
@@ -23,11 +23,11 @@ layout: default
       <div class="panel panel-default">
         <div class="panel-heading">
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h3 class="panel-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+          <h3 class="panel-title"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h3>
         </div>
         <div class="panel-body">
           {{ post.content | truncatewords: 30 }}<br><br>
-          <a href="{{ site.baseurl }}{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
+          <a href="{{ site.baseurl }}/{{ post.url }}"><btn class="btn btn-default">Read more...</btn></a><br>
         </div>
      </div>
     </article>
