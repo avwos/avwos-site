@@ -30,13 +30,17 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="trigger">
-                  {% for page in site.pages %}
-                    {% if page.title %}
-                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    {% endif %}
-                  {% endfor %}
-                </div>
+                <ul class="nav navbar-nav navbar-left">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="trigger">
+                          {% for page in site.pages %}
+                            {% if page.title %}
+                            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                    </div>
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
