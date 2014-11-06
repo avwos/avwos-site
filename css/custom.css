@@ -63,12 +63,12 @@ nav {
 
 footer {
   font-family: 'Francois One', sans-serif;
-  color: #fff;
 }
 
-footer li {
+footer li a {
   list-style:none;
   list-style-type:none;
+  color: #fff;
 }
 
 @media(min-width:768px) {
