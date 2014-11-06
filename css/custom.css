@@ -61,24 +61,6 @@ nav {
   margin-bottom: 20px;
 }
 
-footer {
-  font-family: 'Francois One', sans-serif;
-}
-
-footer a {
-  color: #fff;
-}
-
-footer a:hover {
-  color: #F5F5F5;
-  text-decoration: none;
-}
-
-li {
-  list-style:none;
-  list-style-type:none;
-}
-
 @media(min-width:768px) {
     header .container {
         padding-top: 40px;
@@ -96,6 +78,7 @@ li {
 
 footer {
     color: #fff;
+    font-family: 'Francois One', sans-serif;
 }
 
 footer h3 {
@@ -116,6 +99,21 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color: #222222;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+li {
+  list-style:none;
+  list-style-type:none;
+  text-align: center;
 }
 
 .btn-outline {
