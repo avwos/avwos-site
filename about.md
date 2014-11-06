@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About AVWOS
 permalink: /about/
 ---
 <img class="img-responsive thumbnail" src="{{ site.baseurl }}/img/screenshots/shame.jpg">
