@@ -31,15 +31,19 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
-                    <div class="trigger">
-                      {% for page in site.pages %}
-                        {% if page.title %}
-                        <li class="page-scroll">
-                          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                        </li>
-                        {% endif %}
-                      {% endfor %}
-                    </div>
+                    {% for page in site.pages %}
+                      {% if page.title %}
+                      <li class="page-scroll">
+                        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                      </li>
+                      {% endif %}
+                    {% endfor %}
+                    <li class="page-scroll">
+                        <a href="#fb"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#fb"><i class="fa fa-fw fa-twitter"></i></a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
