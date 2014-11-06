@@ -65,10 +65,13 @@ footer {
   font-family: 'Francois One', sans-serif;
 }
 
-footer ul li a {
+footer a {
+  color: #fff;
+}
+
+li {
   list-style:none;
   list-style-type:none;
-  color: #fff;
 }
 
 @media(min-width:768px) {
